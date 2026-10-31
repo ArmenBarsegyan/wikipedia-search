@@ -1,8 +1,6 @@
 package wikisearch;
 
 public class SearchResult {
-    private static final String ARTICLE_URL = "https://ru.wikipedia.org/w/index.php?curid=";
-
     private final String title;
     private final long pageId;
     private final String snippet;
@@ -23,9 +21,5 @@ public class SearchResult {
 
     public String getSnippet() {
         return snippet;
-    }
-
-    public String getArticleUrl() {
-        return ARTICLE_URL + pageId;
     }
 }
